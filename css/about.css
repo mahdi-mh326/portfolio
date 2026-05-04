@@ -173,6 +173,47 @@ body.light-mode .info-row p {
     font-size: 20px;
 }
 
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.social-btn.linkedin  { background: rgba(10, 102, 194, 0.15); color: #0a66c2; }
+.social-btn.github    { background: rgba(148, 163, 184, 0.15); color: #94a3b8; }
+.social-btn.facebook  { background: rgba(24, 119, 242, 0.15); color: #1877f2; }
+.social-btn.instagram { background: rgba(225, 48, 108, 0.15); color: #e1306c; }
+
+.social-btn:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.2);
+}
+
+.social-btn.linkedin:hover  { background: rgba(10, 102, 194, 0.3); }
+.social-btn.github:hover    { background: rgba(148, 163, 184, 0.3); }
+.social-btn.facebook:hover  { background: rgba(24, 119, 242, 0.3); }
+.social-btn.instagram:hover { background: rgba(225, 48, 108, 0.3); }
+
 /* ===== RIGHT CONTENT ===== */
 .about-content {
     display: flex;
