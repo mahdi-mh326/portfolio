@@ -315,43 +315,7 @@
     <img src="images/profile.jpg" alt="Mahdi Profile">
 </div>
 
-<script>
-const logoBtn = document.getElementById('logoBtn');
-const photoOverlay = document.getElementById('photoOverlay');
-const closeBtn = document.getElementById('closeBtn');
-const themeToggle = document.getElementById('themeToggle');
-
-// Theme toggle functionality
-const currentTheme = localStorage.getItem('theme') || 'dark';
-if (currentTheme === 'light') {
-    document.body.classList.add('light-mode');
-    themeToggle.checked = true;
-}
-
-themeToggle.addEventListener('change', function() {
-    document.body.classList.toggle('light-mode');
-    const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
-    localStorage.setItem('theme', theme);
-});
-
-// Show full photo on click
-logoBtn.addEventListener('click', function() {
-    photoOverlay.classList.add('active');
-});
-
-// Close overlay when clicking close button
-closeBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    photoOverlay.classList.remove('active');
-});
-
-// Close overlay when clicking on background
-photoOverlay.addEventListener('click', function(e) {
-    if (e.target === photoOverlay) {
-        photoOverlay.classList.remove('active');
-    }
-});
-</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
