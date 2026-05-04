@@ -1,247 +1,270 @@
-/* ===== HERO ===== */
-.contact-hero {
-    padding: 80px 10% 50px;
-    text-align: center;
+/* ===== PAGE LAYOUT ===== */
+.contact-page {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    padding: 60px 10%;
+    min-height: calc(100vh - 80px);
+    box-sizing: border-box;
 }
 
-.availability-badge {
+/* ===== LEFT: PROFILE CARD ===== */
+.contact-profile {
+    background: linear-gradient(145deg, #1e293b, #334155);
+    border-radius: 24px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 2px solid rgba(56, 189, 248, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+body.light-mode .contact-profile {
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cp-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    margin-bottom: 4px;
+}
+
+.cp-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-profile h2 {
+    font-size: 20px;
+    color: #38bdf8;
+    margin: 0;
+}
+
+.cp-title {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.cp-badge {
     display: inline-block;
     background: rgba(56, 189, 248, 0.1);
     border: 1px solid #38bdf8;
     color: #38bdf8;
-    padding: 6px 18px;
+    padding: 5px 14px;
     border-radius: 20px;
-    font-size: 13px;
-    margin-bottom: 20px;
+    font-size: 12px;
     animation: pulse-badge 2.5s ease-in-out infinite;
 }
 
 @keyframes pulse-badge {
     0%, 100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.3); }
-    50%       { box-shadow: 0 0 0 8px rgba(56, 189, 248, 0); }
+    50%       { box-shadow: 0 0 0 6px rgba(56, 189, 248, 0); }
 }
 
-.contact-hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.contact-hero h1 span {
-    color: #38bdf8;
-}
-
-.contact-hero p {
+.cp-bio {
+    font-size: 13px;
     color: #94a3b8;
-    font-size: 16px;
-    max-width: 520px;
-    margin: 0 auto;
     line-height: 1.7;
+    margin: 4px 0;
+    text-align: center;
 }
 
-body.light-mode .contact-hero p {
+body.light-mode .cp-bio {
     color: #64748b;
 }
 
-/* ===== SECTION ===== */
-.contact-section {
-    padding: 0 10% 80px;
-    max-width: 1100px;
-    margin: 0 auto;
+.cp-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
 }
 
-/* ===== CONTACT CARDS — 3 columns × 2 rows ===== */
-.contact-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-bottom: 24px;
+.cp-meta span {
+    font-size: 13px;
+    color: #94a3b8;
+    background: rgba(56, 189, 248, 0.07);
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-align: left;
 }
 
-.contact-card {
+body.light-mode .cp-meta span {
+    color: #475569;
+    background: #f1f5f9;
+}
+
+/* ===== RIGHT: CONTACT LINKS ===== */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links-title {
+    font-size: 22px;
+    color: #38bdf8;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+/* ===== EACH LINK ROW ===== */
+.clink {
     display: flex;
     align-items: center;
-    gap: 16px;
-    background: #1e293b;
+    gap: 18px;
+    padding: 20px 22px;
     border-radius: 16px;
-    padding: 22px 20px;
     text-decoration: none;
     color: inherit;
+    background: #1e293b;
     border: 2px solid transparent;
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 
-.contact-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.05), transparent);
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.contact-card:hover {
-    border-color: #38bdf8;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.18);
-}
-
-.contact-card:hover::before {
-    opacity: 1;
-}
-
-body.light-mode .contact-card {
+body.light-mode .clink {
     background: #ffffff;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
 }
 
-body.light-mode .contact-card:hover {
-    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15);
+.clink:hover {
+    transform: translateX(6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== CARD ICON ===== */
-.card-icon {
-    width: 52px;
-    height: 52px;
+/* per-platform accent colours on hover */
+.clink.email:hover     { border-color: #38bdf8; }
+.clink.phone:hover     { border-color: #34d399; }
+.clink.linkedin:hover  { border-color: #0a66c2; }
+.clink.github:hover    { border-color: #94a3b8; }
+.clink.facebook:hover  { border-color: #1877f2; }
+.clink.instagram:hover { border-color: #e1306c; }
+
+/* ===== ICON BOX ===== */
+.clink-icon {
+    width: 50px;
+    height: 50px;
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 26px;
 }
 
-.card-icon svg {
-    width: 24px;
-    height: 24px;
+.clink-icon svg {
+    width: 22px;
+    height: 22px;
 }
 
-.email-icon     { background: rgba(56, 189, 248, 0.12); color: #38bdf8; }
-.phone-icon     { background: rgba(52, 211, 153, 0.12); color: #34d399; }
-.linkedin-icon  { background: rgba(10, 102, 194, 0.12); color: #0a66c2; }
-.github-icon    { background: rgba(148, 163, 184, 0.12); color: #94a3b8; }
-.facebook-icon  { background: rgba(24, 119, 242, 0.12); color: #1877f2; }
-.instagram-icon { background: rgba(225, 48, 108, 0.12); color: #e1306c; }
+.clink.email     .clink-icon { background: rgba(56, 189, 248, 0.12); color: #38bdf8; }
+.clink.phone     .clink-icon { background: rgba(52, 211, 153, 0.12); color: #34d399; }
+.clink.linkedin  .clink-icon { background: rgba(10, 102, 194, 0.12); color: #0a66c2; }
+.clink.github    .clink-icon { background: rgba(148, 163, 184, 0.12); color: #94a3b8; }
+.clink.facebook  .clink-icon { background: rgba(24, 119, 242, 0.12); color: #1877f2; }
+.clink.instagram .clink-icon { background: rgba(225, 48, 108, 0.12); color: #e1306c; }
 
-body.light-mode .github-icon { color: #334155; }
+body.light-mode .clink.github .clink-icon { color: #334155; }
 
-/* ===== CARD BODY ===== */
-.card-body {
+/* ===== LINK TEXT ===== */
+.clink-body {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.card-label {
-    font-size: 10px;
+.clink-platform {
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #38bdf8;
     font-weight: 600;
+    color: #64748b;
 }
 
-.card-body h3 {
-    font-size: 14px;
-    margin: 3px 0 5px;
+.clink-value {
+    font-size: 15px;
+    font-weight: 600;
     color: #e2e8f0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-body.light-mode .card-body h3 {
+body.light-mode .clink-value {
     color: #1e293b;
 }
 
-.card-body p {
-    font-size: 11px;
-    color: #64748b;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.card-arrow {
-    font-size: 18px;
-    color: #38bdf8;
-    opacity: 0;
-    transform: translateX(-6px);
-    transition: 0.3s;
+/* ===== ARROW ===== */
+.clink-arrow {
+    width: 18px;
+    height: 18px;
+    color: #475569;
     flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.25s, transform 0.25s;
 }
 
-.contact-card:hover .card-arrow {
+.clink:hover .clink-arrow {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* ===== INFO STRIP — 3 columns ===== */
-.contact-bottom {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-}
-
-.location-card {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: #1e293b;
-    border-radius: 14px;
-    padding: 20px;
-    transition: 0.3s;
-    border: 1px solid transparent;
-}
-
-.location-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(56, 189, 248, 0.3);
-}
-
-body.light-mode .location-card {
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-}
-
-.loc-icon {
-    font-size: 28px;
-    flex-shrink: 0;
-}
-
-.location-card h4 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #38bdf8;
-    margin-bottom: 4px;
-}
-
-.location-card p {
-    font-size: 13px;
-    color: #94a3b8;
-    margin: 0;
-}
-
-body.light-mode .location-card p {
-    color: #475569;
-}
+/* per-platform arrow colour on hover */
+.clink.email:hover     .clink-arrow { color: #38bdf8; }
+.clink.phone:hover     .clink-arrow { color: #34d399; }
+.clink.linkedin:hover  .clink-arrow { color: #0a66c2; }
+.clink.github:hover    .clink-arrow { color: #94a3b8; }
+.clink.facebook:hover  .clink-arrow { color: #1877f2; }
+.clink.instagram:hover .clink-arrow { color: #e1306c; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-    .contact-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .contact-page {
+        grid-template-columns: 1fr;
+        padding: 40px 6%;
+    }
+
+    .contact-profile {
+        position: static;
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cp-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
-@media (max-width: 640px) {
-    .contact-hero h1 {
-        font-size: 34px;
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 30px 4%;
     }
 
-    .contact-cards-grid {
-        grid-template-columns: 1fr;
+    .clink {
+        padding: 16px 16px;
     }
 
-    .contact-bottom {
-        grid-template-columns: 1fr;
+    .clink-value {
+        font-size: 13px;
     }
 }
