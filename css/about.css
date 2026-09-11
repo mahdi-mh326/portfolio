@@ -152,7 +152,7 @@
     width: 100%;
     padding: 12px;
     background: var(--accent-gradient);
-    color: #06080b !important;
+    color: #ffffff !important;
     font-family: var(--font-heading);
     font-weight: 700;
     border-radius: 9999px;
@@ -190,7 +190,7 @@
 }
 
 .social-btn:hover {
-    color: #06080b;
+    color: #ffffff;
     background: var(--accent-emerald);
     border-color: var(--accent-emerald);
 }

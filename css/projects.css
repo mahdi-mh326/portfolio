@@ -153,7 +153,7 @@
 
 .project-actions .btn-action:hover {
     background: var(--accent-gradient);
-    color: #06080b;
+    color: #ffffff;
     border-color: transparent;
     box-shadow: 0 6px 16px var(--accent-glow);
 }
