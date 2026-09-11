@@ -1,10 +1,10 @@
-/* ===== CONTACT PAGE LAYOUT ===== */
+/* ===== CONTACT PAGE (COMMAND CENTER) ===== */
 .contact-page {
     display: grid;
     grid-template-columns: 360px 1fr;
-    gap: 40px;
-    padding: 40px 6% 80px;
-    max-width: 1350px;
+    gap: 36px;
+    padding: 30px 5% 80px;
+    max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     align-items: start;
@@ -14,13 +14,13 @@
 .contact-profile {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: 24px;
-    padding: 36px 28px;
+    border-radius: 28px;
+    padding: 34px 26px;
     text-align: center;
     box-shadow: var(--card-shadow);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(18px);
     position: sticky;
-    top: 90px;
+    top: 95px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +37,9 @@
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: 3px solid var(--accent-primary);
+    border: 3px solid var(--accent-emerald);
     overflow: hidden;
-    box-shadow: 0 0 20px var(--accent-glow-strong);
+    box-shadow: 0 0 20px var(--accent-glow);
     margin-bottom: 6px;
     transition: var(--transition-bounce);
 }
@@ -61,9 +61,10 @@
 }
 
 .cp-title {
-    font-size: 0.88rem;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
     color: var(--badge-text);
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -76,7 +77,7 @@
     color: var(--badge-text);
     padding: 5px 14px;
     border-radius: 9999px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 600;
 }
 
@@ -92,13 +93,13 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 8px;
     padding-top: 18px;
     border-top: 1px solid var(--border-subtle);
 }
 
 .cp-meta span {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
     color: var(--text-muted);
     display: flex;
     align-items: center;
@@ -110,31 +111,18 @@
 .contact-right {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 32px;
 }
 
 .links-title {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     color: var(--text-primary);
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 8px;
-}
-
-.links-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 45px;
-    height: 3px;
-    background: var(--accent-gradient);
-    border-radius: 2px;
+    margin-bottom: 18px;
 }
 
 .contact-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 18px;
 }
 
@@ -142,12 +130,12 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 18px 22px;
+    padding: 18px 20px;
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: 18px;
+    border-radius: 20px;
     box-shadow: var(--card-shadow);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
     transition: var(--transition-bounce);
     position: relative;
     overflow: hidden;
@@ -161,8 +149,8 @@
 }
 
 .clink-icon {
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     border-radius: 12px;
     background: var(--badge-bg);
     color: var(--badge-text);
@@ -180,8 +168,12 @@
 
 .clink:hover .clink-icon {
     background: var(--accent-gradient);
-    color: #ffffff;
+    color: #06080b;
     transform: scale(1.08);
+}
+
+body.light-mode .clink:hover .clink-icon {
+    color: #ffffff;
 }
 
 .clink-body {
@@ -192,15 +184,16 @@
 }
 
 .clink-platform {
-    font-size: 0.78rem;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-muted);
 }
 
 .clink-value {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 600;
     color: var(--text-primary);
     white-space: nowrap;
@@ -221,26 +214,18 @@
     transform: translateX(4px);
 }
 
-/* Specific Platform Hover Accents */
-.clink.email:hover { border-color: rgba(239, 68, 68, 0.4); }
-.clink.phone:hover { border-color: rgba(16, 185, 129, 0.4); }
-.clink.linkedin:hover { border-color: rgba(10, 102, 194, 0.4); }
-.clink.github:hover { border-color: rgba(168, 85, 247, 0.4); }
-.clink.facebook:hover { border-color: rgba(24, 119, 242, 0.4); }
-.clink.instagram:hover { border-color: rgba(236, 72, 153, 0.4); }
-
-/* Quick Message Box */
+/* Quick Message Form Card */
 .quick-message-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 24px;
+    padding: 32px;
     box-shadow: var(--card-shadow);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
 }
 
 .quick-message-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--text-primary);
     margin-bottom: 8px;
 }
@@ -264,9 +249,11 @@
 }
 
 .form-group label {
-    font-size: 0.82rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--text-muted);
+    text-transform: uppercase;
 }
 
 .form-group input,
@@ -278,14 +265,14 @@
     border-radius: 12px;
     color: var(--text-primary);
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     transition: var(--transition-smooth);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--border-focus);
+    border-color: var(--border-active);
     box-shadow: 0 0 0 3px var(--badge-bg);
 }
 
@@ -294,7 +281,6 @@
     min-height: 110px;
 }
 
-/* Responsive */
 @media (max-width: 960px) {
     .contact-page {
         grid-template-columns: 1fr;
@@ -302,7 +288,7 @@
 
     .contact-profile {
         position: static;
-        max-width: 550px;
+        max-width: 500px;
         margin: 0 auto;
     }
 }

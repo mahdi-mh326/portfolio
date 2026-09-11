@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Mahdi Hasan | Software Developer & ML Enthusiast</title>
-    <meta name="description" content="Portfolio of Md. Mahdi Hasan - Final Year Computer Science & Engineering Student at IUBAT. Software development, machine learning, and Explainable AI.">
+    <title>Md. Mahdi Hasan | Software Engineer &amp; ML Researcher</title>
+    <meta name="description" content="Portfolio of Md. Mahdi Hasan - Final Year Computer Science & Engineering Student at IUBAT. Specializing in Software Engineering and Explainable AI.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- ===== FLOATING PILL DOCK NAVBAR ===== -->
 <header>
     <nav class="navbar">
         <div class="logo" id="logoBtn" title="Click to view full photo">
@@ -26,7 +26,7 @@
             </div>
             <div class="logo-text">
                 MD. MAHDI HASAN
-                <span>CSE Student &bull; AI/ML</span>
+                <span>ENGINEER &bull; AI/ML</span>
             </div>
         </div>
 
@@ -41,13 +41,11 @@
         </ul>
 
         <div class="nav-actions">
-            <!-- Theme Toggle Switch -->
             <label class="switch" title="Toggle Dark/Light Mode">
                 <input id="themeToggle" type="checkbox" aria-label="Toggle theme" />
                 <span class="slider round"></span>
             </label>
 
-            <!-- Mobile Menu Toggle Button -->
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
@@ -60,20 +58,20 @@
 <!-- ===== HERO SECTION ===== -->
 <section class="hero">
     <div class="hero-content">
-        <div class="status-badge">
-            <span class="pulse-dot"></span> Available for Internships & Full-Time Roles
+        <div class="terminal-badge">
+            <span class="pulse-dot"></span>
+            <span>&gt; mahdi.init() // Final Year CSE @ IUBAT</span>
         </div>
 
-        <h1>Hi, I'm <span class="gradient-text">MD. MAHDI HASAN</span></h1>
-        <h3>Final Year Student of Computer Science &amp; Engineering</h3>
+        <h1>Building Intelligent Software &amp; <span class="gradient-text">Explainable AI.</span></h1>
+        <h3>Computer Science &amp; Engineering Undergrad &bull; Software Developer</h3>
         <p>
-            Passionate about software development, machine learning, and building high-impact digital solutions. 
-            Currently developing explainable AI applications and seeking opportunities to solve complex real-world problems.
+            Architecting robust software systems, computer vision tools, and clinically interpretable machine learning models. Seeking software engineering and research opportunities to build high-impact solutions.
         </p>
 
         <div class="buttons">
             <a href="projects.html" class="btn">
-                <span>View Projects</span>
+                <span>Explore Projects</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="assets/Md. Mahdi Hasan 01731582633.pdf" class="btn secondary" download>
@@ -81,109 +79,201 @@
                 <span>Download CV</span>
             </a>
         </div>
+
+        <div class="hero-metrics">
+            <div class="metric-chip">
+                <strong>06+</strong>
+                <span>Projects</span>
+            </div>
+            <div class="metric-chip">
+                <strong>07+</strong>
+                <span>Certifications</span>
+            </div>
+            <div class="metric-chip">
+                <strong>02</strong>
+                <span>Active Research</span>
+            </div>
+            <div class="metric-chip">
+                <strong>2026</strong>
+                <span>Graduation</span>
+            </div>
+        </div>
     </div>
     
     <div class="hero-image">
-        <div class="hero-image-wrapper">
-            <img src="images/profile.jpg" alt="Mahdi Hasan">
-            <div class="hero-floating-badge">
-                <span class="badge-icon">🎓</span>
-                <div>
-                    <strong>IUBAT</strong>
-                    <span>B.Sc in CSE</span>
+        <div class="bento-profile-card">
+            <div class="card-topbar">
+                <div class="card-dots">
+                    <span></span><span></span><span></span>
                 </div>
+                <span class="card-label">profile.ts</span>
+            </div>
+
+            <div class="bento-avatar-wrap">
+                <img src="images/profile.jpg" alt="Md. Mahdi Hasan">
+                <div class="live-badge">
+                    <span class="pulse-dot"></span> Available for Hire
+                </div>
+            </div>
+
+            <div class="code-preview-box">
+                <div><span class="keyword">const</span> <span class="prop">engineer</span> = {</div>
+                <div style="padding-left: 14px;"><span class="prop">name</span>: <span class="string">'Md. Mahdi Hasan'</span>,</div>
+                <div style="padding-left: 14px;"><span class="prop">role</span>: <span class="string">'SWE & ML Researcher'</span>,</div>
+                <div style="padding-left: 14px;"><span class="prop">stack</span>: [<span class="string">'Python'</span>, <span class="string">'C#'</span>, <span class="string">'AI/ML'</span>]</div>
+                <div>};</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== SKILLS SECTION ===== -->
-<section class="skills">
+<!-- ===== BENTO MATRIX SECTION ===== -->
+<section class="bento-matrix">
     <div class="section-header">
         <span class="section-tag">Capabilities</span>
-        <h2>My Technical Skills</h2>
+        <h2>Technical Core &amp; Expertise</h2>
     </div>
-    <div class="skill-box">
-        <div class="skill">🐍 Python</div>
-        <div class="skill">🔷 C# / .NET</div>
-        <div class="skill">⚡ C / C++</div>
-        <div class="skill">🤖 TensorFlow &amp; Keras</div>
-        <div class="skill">📊 Scikit-Learn</div>
-        <div class="skill">🔥 Firebase</div>
-        <div class="skill">🐬 MySQL</div>
-        <div class="skill">🌐 HTML5 &amp; CSS3</div>
-        <div class="skill">✨ JavaScript</div>
-        <div class="skill">🐙 Git &amp; GitHub</div>
+
+    <div class="bento-grid">
+        <!-- Tile 1: AI & ML -->
+        <div class="bento-tile col-8">
+            <div class="bento-header">
+                <div class="bento-icon">🤖</div>
+                <span class="bento-index">01 // AI LAB</span>
+            </div>
+            <h3>Explainable AI &amp; Machine Learning</h3>
+            <p>
+                Specializing in making machine learning systems accountable and clinically interpretable. Extensive research experience applying SHAP, LIME, XGBoost, and deep CNNs for medical recommendations and emotion recognition.
+            </p>
+            <div class="tag-cloud">
+                <span class="bento-tag">Python</span>
+                <span class="bento-tag">TensorFlow</span>
+                <span class="bento-tag">Scikit-learn</span>
+                <span class="bento-tag">SHAP &amp; LIME</span>
+                <span class="bento-tag">OpenCV</span>
+                <span class="bento-tag">Computer Vision</span>
+            </div>
+        </div>
+
+        <!-- Tile 2: Live Status -->
+        <div class="bento-tile col-4">
+            <div class="bento-header">
+                <div class="bento-icon">⚡</div>
+                <span class="bento-index">02 // STATUS</span>
+            </div>
+            <h3>Open for Opportunities</h3>
+            <p>
+                Actively seeking software engineering internships, junior developer roles, and AI research collaborations.
+            </p>
+            <div class="tag-cloud">
+                <span class="bento-tag">Full-Time</span>
+                <span class="bento-tag">Internship</span>
+                <span class="bento-tag">Remote / Dhaka</span>
+            </div>
+        </div>
+
+        <!-- Tile 3: Software Engineering -->
+        <div class="bento-tile col-4">
+            <div class="bento-header">
+                <div class="bento-icon">💻</div>
+                <span class="bento-index">03 // STACK</span>
+            </div>
+            <h3>Software Architecture</h3>
+            <p>
+                Writing scalable, object-oriented code implementing enterprise design patterns (Singleton, Factory, Observer) in C# and .NET.
+            </p>
+            <div class="tag-cloud">
+                <span class="bento-tag">C#</span>
+                <span class="bento-tag">.NET</span>
+                <span class="bento-tag">C / C++</span>
+                <span class="bento-tag">MySQL</span>
+                <span class="bento-tag">Git</span>
+            </div>
+        </div>
+
+        <!-- Tile 4: Web & Cloud -->
+        <div class="bento-tile col-8">
+            <div class="bento-header">
+                <div class="bento-icon">🌐</div>
+                <span class="bento-index">04 // WEB SYSTEMS</span>
+            </div>
+            <h3>Cloud &amp; Modern Web Platforms</h3>
+            <p>
+                Developing interactive web systems with Firebase real-time database, modern responsive JavaScript, and secure cloud authentication.
+            </p>
+            <div class="tag-cloud">
+                <span class="bento-tag">JavaScript (ES6+)</span>
+                <span class="bento-tag">Firebase</span>
+                <span class="bento-tag">HTML5 / CSS3</span>
+                <span class="bento-tag">REST APIs</span>
+                <span class="bento-tag">UI/UX Design</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- ===== PROJECT HIGHLIGHTS ===== -->
-<section class="projects-preview">
+<!-- ===== FEATURED PROJECTS ===== -->
+<section class="preview-section">
     <div class="section-header">
         <span class="section-tag">Portfolio</span>
-        <h2>Featured Projects</h2>
+        <h2>Selected Works</h2>
     </div>
 
-    <div class="preview-grid">
-        <div class="project-card">
+    <div class="editorial-grid">
+        <!-- Project 1 -->
+        <div class="editorial-card">
+            <span class="card-number">// 01 &bull; DESKTOP APP</span>
             <h3>Student Management System</h3>
             <p>
-                A C# desktop application built with enterprise design patterns (Singleton, Factory, Observer) to manage student records, courses, and registrations efficiently.
+                A high-performance C# application applying design patterns to handle student registration, grade evaluation, and relational database operations efficiently.
             </p>
-            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+            <div class="card-footer">
+                <div class="tag-cloud">
+                    <span class="bento-tag">C#</span>
+                    <span class="bento-tag">.NET</span>
+                    <span class="bento-tag">MySQL</span>
+                </div>
+                <a href="projects.html" class="btn btn-sm secondary">Details &rarr;</a>
+            </div>
         </div>
 
-        <div class="project-card">
+        <!-- Project 2 -->
+        <div class="editorial-card">
+            <span class="card-number">// 02 &bull; CLOUD PORTAL</span>
             <h3>Smart Classroom Platform</h3>
             <p>
-                A Firebase-powered educational portal allowing instructors to create online exams and quizzes with real-time participation and automated grading.
+                A Firebase-backed web testing suite enabling teachers to create interactive exams with real-time participation tracking and automated result publishing.
             </p>
-            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+            <div class="card-footer">
+                <div class="tag-cloud">
+                    <span class="bento-tag">JavaScript</span>
+                    <span class="bento-tag">Firebase</span>
+                    <span class="bento-tag">CSS3</span>
+                </div>
+                <a href="projects.html" class="btn btn-sm secondary">Details &rarr;</a>
+            </div>
         </div>
 
-        <div class="project-card">
+        <!-- Project 3 -->
+        <div class="editorial-card">
+            <span class="card-number">// 03 &bull; COMPUTER VISION</span>
             <h3>Driver's Drowsiness Detector</h3>
             <p>
-                A computer vision system that monitors driver eye-aspect ratio and facial landmarks in real time to trigger drowsiness alerts and prevent road accidents.
+                A real-time facial landmark detection system analyzing Eye Aspect Ratio (EAR) movements to trigger life-saving auditory warnings for fatigued drivers.
             </p>
-            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+            <div class="card-footer">
+                <div class="tag-cloud">
+                    <span class="bento-tag">Python</span>
+                    <span class="bento-tag">OpenCV</span>
+                    <span class="bento-tag">dlib</span>
+                </div>
+                <a href="projects.html" class="btn btn-sm secondary">Details &rarr;</a>
+            </div>
         </div>
     </div>
 
-    <div class="section-center-btn">
-        <a href="projects.html" class="btn">See All Projects</a>
-    </div>
-</section>
-
-<!-- ===== RESEARCH SECTION ===== -->
-<section class="research">
-    <div class="section-header">
-        <span class="section-tag">Academics</span>
-        <h2>Research &amp; Ongoing Work</h2>
-    </div>
-
-    <div class="preview-grid">
-        <div class="research-card">
-            <span class="status-badge"><span class="pulse-dot"></span> Ongoing Research</span>
-            <h3>Personalized Medical Recommendation Using Explainable AI</h3>
-            <p>
-                Developing a transparent machine learning framework using SHAP and LIME to generate clinically interpretable treatment recommendations.
-            </p>
-            <a href="research.html" class="btn btn-sm secondary">Read Methodology &rarr;</a>
-        </div>
-
-        <div class="research-card">
-            <span class="status-badge"><span class="pulse-dot"></span> Ongoing Research</span>
-            <h3>Emotion Detection from Facial Images</h3>
-            <p>
-                Training deep Convolutional Neural Networks (CNN) with OpenCV to classify human facial expressions across diverse lighting conditions and demographics.
-            </p>
-            <a href="research.html" class="btn btn-sm secondary">Read Methodology &rarr;</a>
-        </div>
-    </div>
-
-    <div class="section-center-btn">
-        <a href="research.html" class="btn">Explore All Research</a>
+    <div style="text-align: center;">
+        <a href="projects.html" class="btn">View All 6 Projects &rarr;</a>
     </div>
 </section>
 
@@ -191,7 +281,7 @@
 <section class="certifications">
     <div class="section-header">
         <span class="section-tag">Credentials</span>
-        <h2>Certifications</h2>
+        <h2>Verified Certifications</h2>
     </div>
 
     <div class="cert-showcase">
@@ -238,7 +328,7 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-    <p>&copy; 2026 Md. Mahdi Hasan | Built with passion &amp; modern engineering</p>
+    <p>&copy; 2026 Md. Mahdi Hasan &bull; Engineered with passion, precision &amp; modern code</p>
 </footer>
 
 <!-- Full size photo overlay -->

@@ -1,21 +1,21 @@
-/* ===== RESEARCH PAGE ===== */
+/* ===== RESEARCH PAGE (LABORATORY ARCHITECTURE) ===== */
 .research-page {
-    padding: 20px 6% 80px;
-    max-width: 1100px;
+    padding: 20px 5% 80px;
+    max-width: 1080px;
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
 }
 
 .research-item {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: 20px;
-    padding: 34px;
+    border-radius: 26px;
+    padding: 36px;
     box-shadow: var(--card-shadow);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
     position: relative;
     overflow: hidden;
     transition: var(--transition-bounce);
@@ -44,26 +44,52 @@
     opacity: 1;
 }
 
+.research-meta-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.research-tag-id {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-amber);
+    font-weight: 600;
+}
+
 .research-item .status-badge {
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--accent-emerald);
+    background: var(--badge-bg);
+    border: 1px solid var(--badge-border);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .research-item h3 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     color: var(--text-primary);
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     line-height: 1.35;
 }
 
 .research-item p {
     font-size: 1rem;
     color: var(--text-secondary);
-    line-height: 1.75;
+    line-height: 1.78;
     margin-bottom: 14px;
 }
 
 .research-item p:last-of-type {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .tech-tags {
@@ -73,13 +99,14 @@
 }
 
 .tech-tag {
+    font-family: var(--font-mono);
     background: var(--bg-surface);
     color: var(--badge-text);
     border: 1px solid var(--badge-border);
     padding: 5px 14px;
-    border-radius: 9999px;
-    font-size: 0.82rem;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
     transition: var(--transition-smooth);
 }
 
