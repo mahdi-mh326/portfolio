@@ -25,7 +25,6 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    transition: var(--transition-bounce);
 }
 
 .contact-profile:hover {
@@ -41,11 +40,6 @@
     overflow: hidden;
     box-shadow: 0 0 20px var(--accent-glow);
     margin-bottom: 6px;
-    transition: var(--transition-bounce);
-}
-
-.cp-avatar:hover {
-    transform: scale(1.06);
 }
 
 .cp-avatar img {
@@ -136,14 +130,12 @@
     border-radius: 20px;
     box-shadow: var(--card-shadow);
     backdrop-filter: blur(14px);
-    transition: var(--transition-bounce);
     position: relative;
     overflow: hidden;
 }
 
 .clink:hover {
     border-color: var(--border-hover);
-    transform: translateY(-4px);
     box-shadow: var(--card-shadow-hover);
     background: var(--bg-card-hover);
 }
@@ -158,7 +150,6 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: var(--transition-smooth);
 }
 
 .clink-icon svg {
@@ -169,11 +160,6 @@
 .clink:hover .clink-icon {
     background: var(--accent-gradient);
     color: #06080b;
-    transform: scale(1.08);
-}
-
-body.light-mode .clink:hover .clink-icon {
-    color: #ffffff;
 }
 
 .clink-body {
@@ -206,12 +192,10 @@ body.light-mode .clink:hover .clink-icon {
     height: 18px;
     color: var(--text-muted);
     flex-shrink: 0;
-    transition: var(--transition-smooth);
 }
 
 .clink:hover .clink-arrow {
     color: var(--badge-text);
-    transform: translateX(4px);
 }
 
 /* Quick Message Form Card */
@@ -266,7 +250,6 @@ body.light-mode .clink:hover .clink-icon {
     color: var(--text-primary);
     font-family: inherit;
     font-size: 0.92rem;
-    transition: var(--transition-smooth);
 }
 
 .form-group input:focus,

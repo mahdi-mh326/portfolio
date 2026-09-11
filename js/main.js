@@ -1,28 +1,3 @@
-// ===== THEME TOGGLE & PERSISTENCE =====
-const themeToggle = document.getElementById('themeToggle');
-
-function applyTheme(theme) {
-    if (theme === 'light') {
-        document.body.classList.add('light-mode');
-        if (themeToggle) themeToggle.checked = true;
-    } else {
-        document.body.classList.remove('light-mode');
-        if (themeToggle) themeToggle.checked = false;
-    }
-}
-
-// Load saved theme or default to dark
-const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-applyTheme(savedTheme);
-
-if (themeToggle) {
-    themeToggle.addEventListener('change', function () {
-        const newTheme = this.checked ? 'light' : 'dark';
-        applyTheme(newTheme);
-        localStorage.setItem('portfolio-theme', newTheme);
-    });
-}
-
 // ===== MOBILE HAMBURGER MENU =====
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');

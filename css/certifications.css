@@ -71,13 +71,11 @@
     flex-direction: column;
     box-shadow: var(--card-shadow);
     backdrop-filter: blur(14px);
-    transition: var(--transition-bounce);
     position: relative;
 }
 
 .cert-card:hover {
     border-color: var(--border-hover);
-    transform: translateY(-6px);
     box-shadow: var(--card-shadow-hover);
     background: var(--bg-card-hover);
 }
@@ -100,11 +98,6 @@
     max-height: 100%;
     object-fit: contain;
     border-radius: 10px;
-    transition: var(--transition-smooth);
-}
-
-.cert-card:hover .cert-image img {
-    transform: scale(1.04);
 }
 
 .cert-overlay {
@@ -116,7 +109,6 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: var(--transition-smooth);
 }
 
 .cert-card:hover .cert-overlay {
@@ -134,21 +126,10 @@
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 4px 14px var(--accent-glow);
-    transform: translateY(10px);
-    transition: var(--transition-bounce);
-}
-
-body.light-mode .view-btn {
-    color: #ffffff;
-}
-
-.cert-card:hover .view-btn {
-    transform: translateY(0);
 }
 
 .view-btn:hover {
     background: var(--accent-gradient-hover);
-    transform: scale(1.05);
 }
 
 .cert-info {
@@ -242,7 +223,6 @@ body.light-mode .view-btn {
     z-index: 10000;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
     padding: 20px;
 }
 
@@ -276,11 +256,9 @@ body.light-mode .view-btn {
     cursor: pointer;
     font-size: 1.5rem;
     line-height: 1;
-    transition: var(--transition-smooth);
 }
 
 .modal-close:hover {
     background: var(--accent-emerald);
     color: #06080b;
-    transform: rotate(90deg);
 }
