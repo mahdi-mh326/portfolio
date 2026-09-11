@@ -4,136 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Md. Mahdi Hasan</title>
+    <meta name="description" content="Projects portfolio of Md. Mahdi Hasan - applications in C#, Python, Machine Learning, and Web Technologies.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- ===== NAVBAR ===== -->
 <header>
     <nav class="navbar">
-        <div class="logo" id="logoBtn">
-            <img src="images/profile2.jpg" alt="Mahdi">
+        <div class="logo" id="logoBtn" title="Click to view full photo">
+            <div class="logo-avatar-wrap">
+                <img src="images/profile2.jpg" alt="Mahdi Hasan">
+                <span class="status-dot"></span>
+            </div>
+            <div class="logo-text">
+                MD. MAHDI HASAN
+                <span>CSE Student &bull; AI/ML</span>
+            </div>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <label class="switch">
-          <input id="themeToggle" type="checkbox" />
-          <div class="slider round">
-            <div class="sun-moon">
-              <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-              <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"></circle></svg>
-            </div>
-            <div class="stars">
-              <svg id="star-1" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
-              <svg id="star-2" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
-              <svg id="star-3" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
-              <svg id="star-4" class="star" viewBox="0 0 20 20"><path d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"></path></svg>
-            </div>
-          </div>
-        </label>
+
+        <div class="nav-actions">
+            <label class="switch" title="Toggle Dark/Light Mode">
+                <input id="themeToggle" type="checkbox" aria-label="Toggle theme" />
+                <span class="slider round"></span>
+            </label>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
 </header>
 
+<!-- ===== PAGE HERO ===== -->
 <section class="page-hero">
-    <h1>My <span>Projects</span></h1>
-    <p>A collection of projects I've built and contributed to</p>
+    <span class="section-tag">Showcase</span>
+    <h1>Featured <span class="gradient-text">Projects</span></h1>
+    <p>A curated collection of software systems, machine learning models, and web applications I've developed</p>
 </section>
 
+<!-- ===== PROJECTS GRID ===== -->
 <section class="projects-page">
     <div class="projects-grid">
 
+        <!-- Project 1 -->
         <div class="project-item">
+            <span class="project-category">Desktop Application</span>
             <h3>Student Management System</h3>
-            <p>A C# based desktop application using design patterns (Singleton, Factory, Observer) to manage student data, courses, and academic records efficiently.</p>
+            <p>
+                A robust desktop application developed with C# and .NET implementing classic OOP design patterns (Singleton, Factory, Observer) to manage courses, student enrollment, and academic grade evaluations efficiently.
+            </p>
             <div class="tech-tags">
                 <span class="tech-tag">C#</span>
                 <span class="tech-tag">.NET</span>
                 <span class="tech-tag">MySQL</span>
                 <span class="tech-tag">Design Patterns</span>
             </div>
-        </div>
-
-        <div class="project-item">
-            <h3>Smart Classroom Platform</h3>
-            <p>A Firebase-based web system where teachers can create exams and students can participate online with real-time results and performance tracking.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Firebase</span>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Details</span>
+                </a>
             </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="project-item">
+            <span class="project-category">Web Platform</span>
+            <h3>Smart Classroom Platform</h3>
+            <p>
+                A cloud-enabled web platform utilizing Firebase real-time database where educators can generate interactive exams and students can take timed assessments with automated real-time performance analytics.
+            </p>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Details</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+            <span class="project-category">Computer Vision &amp; AI</span>
             <h3>Driver's Drowsiness Detector</h3>
-            <p>A computer vision project that detects driver drowsiness in real-time using facial landmark detection and eye aspect ratio analysis to prevent accidents.</p>
+            <p>
+                An intelligent vision application that analyzes continuous live video streams to compute Eye Aspect Ratio (EAR) and facial landmark movements, alerting drivers to prevent fatigue-related vehicular accidents.
+            </p>
             <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">OpenCV</span>
                 <span class="tech-tag">dlib</span>
                 <span class="tech-tag">Machine Learning</span>
             </div>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Details</span>
+                </a>
+            </div>
         </div>
 
+        <!-- Project 4 -->
         <div class="project-item">
-            <h3>Personalized Medical Recommendation System</h3>
-            <p>An AI-powered system using Explainable AI techniques (SHAP, LIME) to provide transparent and personalized medical recommendations based on patient data.</p>
+            <span class="project-category">Explainable AI</span>
+            <h3>Personalized Medical Recommendation</h3>
+            <p>
+                An interpretable machine learning system utilizing SHAP and LIME algorithms to predict individualized clinical recommendations alongside transparent feature-importance explanations for healthcare providers.
+            </p>
             <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Scikit-learn</span>
                 <span class="tech-tag">SHAP</span>
                 <span class="tech-tag">LIME</span>
             </div>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Details</span>
+                </a>
+            </div>
         </div>
 
+        <!-- Project 5 -->
         <div class="project-item">
+            <span class="project-category">Deep Learning</span>
             <h3>Emotion Detection from Facial Images</h3>
-            <p>A deep learning model that classifies human emotions from facial images using convolutional neural networks and computer vision techniques.</p>
+            <p>
+                A Convolutional Neural Network (CNN) trained with TensorFlow/Keras to categorize human facial expressions into discrete emotional states with high validation accuracy and resilient preprocessing.
+            </p>
             <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">TensorFlow</span>
                 <span class="tech-tag">OpenCV</span>
                 <span class="tech-tag">CNN</span>
             </div>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="https://github.com/mahdi-mh326" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Details</span>
+                </a>
+            </div>
         </div>
 
+        <!-- Project 6 -->
         <div class="project-item">
-            <h3>Portfolio Website</h3>
-            <p>This personal portfolio website built with pure HTML, CSS, and JavaScript featuring dark/light mode, animations, and responsive design.</p>
+            <span class="project-category">Frontend &amp; UI/UX</span>
+            <h3>Personal Developer Portfolio</h3>
+            <p>
+                A high-performance modern developer portfolio engineered with semantic HTML5, modern CSS3 variables, glassmorphic effects, dark/light theme switching, and fluid responsiveness.
+            </p>
             <div class="tech-tags">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
                 <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI/UX</span>
+            </div>
+            <div class="project-actions">
+                <a href="https://github.com/mahdi-mh326/portfolio" target="_blank" rel="noopener noreferrer" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>View Code</span>
+                </a>
+                <a href="index.html" class="btn-action">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    <span>Live Site</span>
+                </a>
             </div>
         </div>
 
     </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2026 Md. Mahdi Hasan | All Rights Reserved</p>
+    <p>&copy; 2026 Md. Mahdi Hasan | Built with passion &amp; modern engineering</p>
 </footer>
 
+<!-- Full size photo overlay -->
 <div class="photo-overlay" id="photoOverlay">
-    <span class="close-btn" id="closeBtn">&times;</span>
-    <img src="images/profile2.jpg" alt="Mahdi Profile">
+    <span class="close-btn" id="closeBtn" title="Close">&times;</span>
+    <img src="images/profile2.jpg" alt="Md. Mahdi Hasan Profile">
 </div>
 
 <script src="js/main.js"></script>

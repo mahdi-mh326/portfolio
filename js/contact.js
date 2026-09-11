@@ -1,9 +1,28 @@
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const form = this;
-    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
-        .then(r => {
-            if (r.ok) { form.reset(); document.getElementById('successMsg').style.display = 'block'; }
-        })
-        .catch(() => { window.location.href = 'mailto:mahdi.mh326@gmail.com'; });
-});
+// ===== CONTACT FORM & QUICK MESSAGE =====
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('senderName')?.value || '';
+        const email = document.getElementById('senderEmail')?.value || '';
+        const subject = document.getElementById('msgSubject')?.value || 'Portfolio Contact Inquiry';
+        const message = document.getElementById('msgBody')?.value || '';
+
+        const mailtoUrl = `mailto:mahdi.mh326@gmail.com?subject=${encodeURIComponent(subject + ' - from ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+
+        // Open user's default email client
+        window.location.href = mailtoUrl;
+
+        // Show feedback notification
+        const statusMsg = document.getElementById('formStatus');
+        if (statusMsg) {
+            statusMsg.style.display = 'block';
+            statusMsg.textContent = 'Opening your email client to send message...';
+            setTimeout(() => {
+                contactForm.reset();
+            }, 2000);
+        }
+    });
+}

@@ -1,61 +1,51 @@
-.page-hero {
-    text-align: center;
-    padding: 60px 10% 20px;
-}
-
-.page-hero h1 {
-    font-size: 36px;
-}
-
-.page-hero h1 span {
-    color: #38bdf8;
-}
-
-.page-hero p {
-    color: #94a3b8;
-    margin-top: 10px;
-}
-
+/* ===== PUBLICATIONS PAGE ===== */
 .publications-page {
-    padding: 40px 10% 60px;
-    max-width: 900px;
+    padding: 20px 6% 80px;
+    max-width: 850px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .coming-soon-box {
-    background: #1e293b;
-    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px dashed var(--border-hover);
+    border-radius: 24px;
     padding: 60px 40px;
     text-align: center;
-    border: 2px dashed #38bdf8;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(12px);
+    transition: var(--transition-smooth);
 }
 
-body.light-mode .coming-soon-box {
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.coming-soon-box:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--card-shadow-hover);
 }
 
 .coming-soon-box .icon {
-    font-size: 64px;
-    display: block;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--badge-bg);
+    margin-bottom: 22px;
 }
 
 .coming-soon-box h3 {
-    color: #38bdf8;
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin-bottom: 14px;
 }
 
 .coming-soon-box p {
-    color: #94a3b8;
-    line-height: 1.7;
-    max-width: 500px;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    font-size: 1.05rem;
+    max-width: 540px;
     margin: 0 auto;
-}
-
-body.light-mode .coming-soon-box p {
-    color: #64748b;
 }
 
 .research-links {
@@ -64,10 +54,7 @@ body.light-mode .coming-soon-box p {
 }
 
 .research-links p {
-    color: #94a3b8;
-    margin-bottom: 15px;
-}
-
-body.light-mode .research-links p {
-    color: #64748b;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
 }

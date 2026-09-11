@@ -3,247 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Mahdi Hasan | Portfolio</title>
+    <title>Md. Mahdi Hasan | Software Developer & ML Enthusiast</title>
+    <meta name="description" content="Portfolio of Md. Mahdi Hasan - Final Year Computer Science & Engineering Student at IUBAT. Software development, machine learning, and Explainable AI.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- ===== NAVBAR ===== -->
 <header>
     <nav class="navbar">
-        <div class="logo" id="logoBtn">
-            <img src="images/profile2.jpg" alt="Mahdi">
+        <div class="logo" id="logoBtn" title="Click to view full photo">
+            <div class="logo-avatar-wrap">
+                <img src="images/profile2.jpg" alt="Mahdi Hasan">
+                <span class="status-dot"></span>
+            </div>
+            <div class="logo-text">
+                MD. MAHDI HASAN
+                <span>CSE Student &bull; AI/ML</span>
+            </div>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <!-- From Uiverse.io by RiccardoRapelli --> 
-        <label class="switch">
-          <input id="themeToggle" type="checkbox" />
-          <div class="slider round">
-            <div class="sun-moon">
-              <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
 
-              <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-              <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="50"></circle>
-              </svg>
-            </div>
-            <div class="stars">
-              <svg id="star-1" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-                ></path>
-              </svg>
-              <svg id="star-2" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-                ></path>
-              </svg>
-              <svg id="star-3" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-                ></path>
-              </svg>
-              <svg id="star-4" class="star" viewBox="0 0 20 20">
-                <path
-                  d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </label>
+        <div class="nav-actions">
+            <!-- Theme Toggle Switch -->
+            <label class="switch" title="Toggle Dark/Light Mode">
+                <input id="themeToggle" type="checkbox" aria-label="Toggle theme" />
+                <span class="slider round"></span>
+            </label>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
 </header>
-
 
 <!-- ===== HERO SECTION ===== -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Hi, I'm <span>MD. MAHDI HASAN</span></h1>
-        <h3>Final year student of Computer Science and Engineering</h3>
+        <div class="status-badge">
+            <span class="pulse-dot"></span> Available for Internships & Full-Time Roles
+        </div>
+
+        <h1>Hi, I'm <span class="gradient-text">MD. MAHDI HASAN</span></h1>
+        <h3>Final Year Student of Computer Science &amp; Engineering</h3>
         <p>
-            Passionate about software development, machine learning, and building 
-            efficient solutions. Currently seeking an internship to gain real-world 
-            experience and enhance my technical skills.
+            Passionate about software development, machine learning, and building high-impact digital solutions. 
+            Currently developing explainable AI applications and seeking opportunities to solve complex real-world problems.
         </p>
 
         <div class="buttons">
-            <a href="projects.html" class="btn">View Projects</a>
-            <a href="assets/Md. Mahdi Hasan 01731582633.pdf" class="btn secondary" download>Download CV</a>
+            <a href="projects.html" class="btn">
+                <span>View Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/Md. Mahdi Hasan 01731582633.pdf" class="btn secondary" download>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download CV</span>
+            </a>
         </div>
     </div>
     
     <div class="hero-image">
-        <img src="images/profile.jpg" alt="Mahdi Hasan">
+        <div class="hero-image-wrapper">
+            <img src="images/profile.jpg" alt="Mahdi Hasan">
+            <div class="hero-floating-badge">
+                <span class="badge-icon">🎓</span>
+                <div>
+                    <strong>IUBAT</strong>
+                    <span>B.Sc in CSE</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ===== SKILLS SECTION ===== -->
 <section class="skills">
-    <h2>My Skills</h2>
+    <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2>My Technical Skills</h2>
+    </div>
     <div class="skill-box">
-        <div class="skill">Python</div>
-        <div class="skill">C#</div>
-        <div class="skill">Firebase</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
+        <div class="skill">🐍 Python</div>
+        <div class="skill">🔷 C# / .NET</div>
+        <div class="skill">⚡ C / C++</div>
+        <div class="skill">🤖 TensorFlow &amp; Keras</div>
+        <div class="skill">📊 Scikit-Learn</div>
+        <div class="skill">🔥 Firebase</div>
+        <div class="skill">🐬 MySQL</div>
+        <div class="skill">🌐 HTML5 &amp; CSS3</div>
+        <div class="skill">✨ JavaScript</div>
+        <div class="skill">🐙 Git &amp; GitHub</div>
     </div>
 </section>
 
-<!-- ===== PROJECT HIGHLIGHT ===== -->
+<!-- ===== PROJECT HIGHLIGHTS ===== -->
 <section class="projects-preview">
-    <h2>Featured Projects</h2>
-
-    <div class="project-card">
-        <h3>Student Management System</h3>
-        <p>
-            A C# based application using design patterns to manage student data, 
-            courses, and records efficiently.
-        </p>
+    <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured Projects</h2>
     </div>
 
-    <div class="project-card">
-        <h3>Smart Classroom Platform</h3>
-        <p>
-            A Firebase-based web system where teachers can create exams and 
-            students can participate online with real-time results.
-        </p>
+    <div class="preview-grid">
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>
+                A C# desktop application built with enterprise design patterns (Singleton, Factory, Observer) to manage student records, courses, and registrations efficiently.
+            </p>
+            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Classroom Platform</h3>
+            <p>
+                A Firebase-powered educational portal allowing instructors to create online exams and quizzes with real-time participation and automated grading.
+            </p>
+            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Driver's Drowsiness Detector</h3>
+            <p>
+                A computer vision system that monitors driver eye-aspect ratio and facial landmarks in real time to trigger drowsiness alerts and prevent road accidents.
+            </p>
+            <a href="projects.html" class="btn btn-sm secondary">Explore Details &rarr;</a>
+        </div>
     </div>
 
-    <a href="projects.html" class="btn">See All Projects</a>
+    <div class="section-center-btn">
+        <a href="projects.html" class="btn">See All Projects</a>
+    </div>
 </section>
 
 <!-- ===== RESEARCH SECTION ===== -->
 <section class="research">
-    <h2>Research & Ongoing Work</h2>
-
-    <div class="research-card">
-        <h3>Personalized Medical Recommendation System Using Explainable AI</h3>
-        <p>
-            Developing a machine learning-based system using Explainable AI 
-            techniques (SHAP, LIME) to provide transparent medical recommendations.
-        </p>
+    <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h2>Research &amp; Ongoing Work</h2>
     </div>
 
-    <div class="research-card">
-        <h3>Emotion Detection from Facial Images</h3>
-        <p>
-            Working on a machine learning model to detect human emotions 
-            from facial images using computer vision techniques.
-        </p>
+    <div class="preview-grid">
+        <div class="research-card">
+            <span class="status-badge"><span class="pulse-dot"></span> Ongoing Research</span>
+            <h3>Personalized Medical Recommendation Using Explainable AI</h3>
+            <p>
+                Developing a transparent machine learning framework using SHAP and LIME to generate clinically interpretable treatment recommendations.
+            </p>
+            <a href="research.html" class="btn btn-sm secondary">Read Methodology &rarr;</a>
+        </div>
+
+        <div class="research-card">
+            <span class="status-badge"><span class="pulse-dot"></span> Ongoing Research</span>
+            <h3>Emotion Detection from Facial Images</h3>
+            <p>
+                Training deep Convolutional Neural Networks (CNN) with OpenCV to classify human facial expressions across diverse lighting conditions and demographics.
+            </p>
+            <a href="research.html" class="btn btn-sm secondary">Read Methodology &rarr;</a>
+        </div>
     </div>
 
-    <a href="research.html" class="btn">Explore Research</a>
-</section>
-
-<!-- ===== PUBLICATIONS SECTION ===== -->
-<section class="publications">
-    <h2>Publications</h2>
-
-    <div class="publication-card">
-        <h3>Coming Soon...</h3>
-        <p>
-            I am currently working on research projects. Publications will be 
-            added here once they are officially published.
-        </p>
+    <div class="section-center-btn">
+        <a href="research.html" class="btn">Explore All Research</a>
     </div>
-
-    <a href="publications.html" class="btn">View Publications</a>
 </section>
 
 <!-- ===== CERTIFICATIONS SECTION ===== -->
 <section class="certifications">
-    <h2>Certifications</h2>
+    <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2>Certifications</h2>
+    </div>
 
     <div class="cert-showcase">
         <div class="cert-slider">
             <div class="cert-slide active">
-                <img src="images/certifications/1.png" alt="Basics of Python – UniAthena (Cambridge International Qualifications, UK)">
+                <img src="images/certifications/1.png" alt="Basics of Python – UniAthena">
                 <h4>Basics of Python – UniAthena (Cambridge International Qualifications, UK)</h4>
             </div>
             <div class="cert-slide">
-                <img src="images/certifications/2.png" alt="Basics of Artificial Intelligence – UniAthena (Cambridge International Qualifications, UK)">
-                <h4>Basics of Artificial Intelligence – UniAthena (Cambridge International Qualifications, UK)</h4>
+                <img src="images/certifications/2.png" alt="Basics of Artificial Intelligence – UniAthena">
+                <h4>Basics of Artificial Intelligence – UniAthena</h4>
             </div>
             <div class="cert-slide">
-                <img src="images/certifications/3.png" alt="Basics of Data Science – UniAthena (Cambridge International Qualifications, UK)">
-                <h4>Basics of Data Science – UniAthena (Cambridge International Qualifications, UK)</h4>
+                <img src="images/certifications/3.png" alt="Basics of Data Science – UniAthena">
+                <h4>Basics of Data Science – UniAthena</h4>
             </div>
             <div class="cert-slide">
-                <img src="images/certifications/4.png" alt="Cyber Hygiene Training – The Asia Foundation & Sajida Foundation">
-                <h4>Cyber Hygiene Training – The Asia Foundation & Sajida Foundation</h4>
+                <img src="images/certifications/4.png" alt="Cyber Hygiene Training – The Asia Foundation">
+                <h4>Cyber Hygiene Training – The Asia Foundation &amp; Sajida Foundation</h4>
             </div>
             <div class="cert-slide">
                 <img src="images/certifications/5.jpg" alt="Introduction to 2D Animation - Grameenphone Academy">
-                <h4>Introduction to 2D Animation - Grameenphone Academy</h4>
+                <h4>Introduction to 2D Animation – Grameenphone Academy</h4>
             </div>
             <div class="cert-slide">
                 <img src="images/certifications/6.jpg" alt="Driver’s Drowsiness Detector - IUBAT IGNITRON 25.1">
-                <h4>Driver’s Drowsiness Detector - IUBAT IGNITRON 25.1</h4>
+                <h4>Driver’s Drowsiness Detector – IUBAT IGNITRON 25.1</h4>
             </div>
             <div class="cert-slide">
-                <img src="images/certifications/7.jpg" alt="Coming Soon">
-                <h4>Coming Soon...</h4>
+                <img src="images/certifications/7.png" alt="Critical Infrastructure Protection - OPSWAT Academy">
+                <h4>Critical Infrastructure Protection (ICIP) – OPSWAT Academy</h4>
             </div>
         </div>
     </div>
 
-    <a href="certifications.html" class="btn cert-view-btn">View All Certifications</a>
+    <div class="slider-controls">
+        <button class="slider-btn" id="prevCertBtn" aria-label="Previous certification">&larr;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextCertBtn" aria-label="Next certification">&rarr;</button>
+    </div>
+
+    <a href="certifications.html" class="btn">View All 7+ Certifications</a>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2026 Md. Mahdi Hasan | All Rights Reserved</p>
+    <p>&copy; 2026 Md. Mahdi Hasan | Built with passion &amp; modern engineering</p>
 </footer>
 
 <!-- Full size photo overlay -->
 <div class="photo-overlay" id="photoOverlay">
-    <span class="close-btn" id="closeBtn">&times;</span>
-    <img src="images/profile2.jpg" alt="Mahdi Profile">
+    <span class="close-btn" id="closeBtn" title="Close">&times;</span>
+    <img src="images/profile2.jpg" alt="Md. Mahdi Hasan Profile">
 </div>
 
 <script src="js/main.js"></script>
